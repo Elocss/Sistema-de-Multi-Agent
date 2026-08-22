@@ -1,5 +1,10 @@
 import asyncio
+import os
 import sys
+
+# Agregar el directorio raíz al path para resolver importaciones del paquete 'src'
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from src.vector_store import initialize_vector_stores
 from src.pipeline import SupportPipeline
 
