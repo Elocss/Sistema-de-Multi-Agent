@@ -1,6 +1,6 @@
 import os
 import unittest
-from src.config import GEMINI_API_KEY
+from src.config import OPENAI_API_KEY
 from src.vector_store import initialize_vector_stores
 from src.pipeline import SupportPipeline
 
@@ -8,8 +8,8 @@ class TestMultiAgentPipeline(unittest.IsolatedAsyncioTestCase):
     @classmethod
     def setUpClass(cls):
         """Inicializar bases de datos antes de las pruebas."""
-        if not GEMINI_API_KEY:
-            raise unittest.SkipTest("GEMINI_API_KEY no está configurada. Saltando pruebas integrales.")
+        if not OPENAI_API_KEY:
+            raise unittest.SkipTest("OPENAI_API_KEY no está configurada. Saltando pruebas integrales.")
         
         # Inicializar Chroma local con los documentos de ejemplo
         initialize_vector_stores()

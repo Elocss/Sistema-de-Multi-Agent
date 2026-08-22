@@ -49,13 +49,13 @@ Sistema-de-Multi-Agent/
 
 ### 1. Prerrequisitos
 - Python 3.10 o superior (el sistema corre bajo Python 3.14.6 en este entorno).
-- Acceso a Internet para comunicarse con las APIs de Gemini y Langfuse.
+- Acceso a Internet para comunicarse con las APIs de OpenAI y Langfuse.
 
 ### 2. Variables de Entorno
 Crea un archivo `.env` en el directorio raíz del proyecto basándote en la plantilla `.env.template`:
 
 ```env
-GEMINI_API_KEY=tu_clave_de_gemini
+OPENAI_API_KEY=tu_clave_de_openai
 LANGFUSE_PUBLIC_KEY=tu_clave_publica_de_langfuse
 LANGFUSE_SECRET_KEY=tu_clave_secreta_de_langfuse
 LANGFUSE_HOST=https://cloud.langfuse.com
