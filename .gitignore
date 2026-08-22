@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local database directories
+data/
+
+# Environment files
+.env
+
+# Application logs
+logs/
+*.log
